@@ -14,13 +14,23 @@ h2 {
   margin: 0px;
   font-family: 'Sono', sans-serif;
   font-size: 25px;
-  font-weight:bolder;
+  font-weight: bolder;
   font-style: normal;
   padding-bottom: 10px;
   text-align: center;
-color: white;
-font-size-adjust: inherit;
-padding-bottom: 50px;
+  color: white;
+  padding-bottom: 50px;
+}
+
+h3 {
+  margin: 0px;
+  font-family: 'Sono', sans-serif;
+  width: 280px;
+  display: flex;
+  justify-content: center;
+
+  padding-bottom: 10px;
+  color: white;
 }
 
 .menubar {
@@ -33,19 +43,19 @@ padding-bottom: 50px;
   height: 0px;
   background-color: #000;
   flex-direction: row;
-
+  width: 100%;
 }
 
 .navigation-menu {
   display: flex;
   flex-direction: row;
-
-
-padding-bottom: 60px;
+  padding-bottom: 60px;
+  width: 100%;
 
 }
+
 .menu {
- 
+
   margin-left: 30px;
   margin-right: 30px;
   display: flex;
@@ -53,7 +63,11 @@ padding-bottom: 60px;
   border: transparent;
   flex: none;
 }
-.menuhome , .menubut1, .menubut2, .menubut3 {
+
+.menuhome,
+.menubut1,
+.menubut2,
+.menubut3 {
 
   margin-left: 30px;
   margin-right: 30px;
@@ -72,6 +86,7 @@ padding-bottom: 60px;
   object-fit: contain;
   flex: none;
 }
+
 .menuhome:hover {
   display: flex;
   background-image: url(background.png);
@@ -107,48 +122,67 @@ padding-bottom: 60px;
   flex: none;
   border: 3px solid white;
 }
+
 .section1 {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 80px;
- justify-content: space-evenly;
+
   height: 1700px;
   background-image: url(background.png);
   background-size: cover;
-  
+  justify-content: center;
+  padding-left: 100px;
+
 }
+
 .section2 {
-display: flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 34px;
+  padding-bottom: 100px;
 }
+
+p {
+  font-size: small;
+}
+
 .title {
   display: flex;
-  flex-wrap: nowrap ;
-  border-bottom:  3px  solid white;
+  flex-wrap: wrap;
+  border-bottom: 3px solid white;
   flex-grow: 1 auto;
   padding-top: 40px;
-  margin-left: 100px;
+
   justify-content: center;
-  margin-right: 100px;
+
   color: whitesmoke;
 }
+
 .title2 {
+  display: flex;
+  justify-content: center;
   padding-bottom: 00px;
   margin: 0;
   border-bottom: 2px solid white;
-  margin-left: 400px;
-  margin-right: 400px
+
 }
+
 ul {
   list-style-type: none;
-  
+
 }
 
 a {
   text-decoration: none;
   display: flex;
   flex: 1 1 auto;
+  text-align: center;
+}
+
+p {
   text-align: center;
 }
 
@@ -171,49 +205,76 @@ html {
 
 header {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin: 0px;
   padding: 0px;
   width: 100%;
 
   flex-direction: column;
-  
-    justify-content:center;
+
+  justify-content: center;
 }
 
 .container-navigation {
-  padding-top:20px;
+
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
-justify-content: center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
   padding-right: 40px;
 
 }
 
 .work-navigation {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   flex-direction: row;
-justify-content: center;
-  align-items:center;
- padding-right: 40px; 
-  margin: 0;
-  margin-bottom: 500px;
-
-
-}
-
-iframe {
-  
-  display: flex;
   justify-content: center;
+  align-items: center;
+  padding-right: 40px;
+  margin: 0;
+}
 
 
 
+img {
+
+  max-width: 150%;
+  max-height: 120%;
 
 }
+
+.media {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0px;
+ 
+
+  width: 280px;
+  height: 280px;
+
+}
+
+.work-container {
+margin-left: 30px;
+margin-right: 30px;
+  padding-bottom: 50px;
+}
+
+.media:hover {
+  transform: scale(1.40);
+}
+
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  margin: 0;
+}
+
 button {
   border: 3px solid white;
   display: flex;
@@ -224,7 +285,7 @@ button {
   transition-duration: .4s;
   flex-wrap: nowrap;
   flex-grow: 0.5;
-  
+
   justify-content: space-evenly;
 }
 
@@ -234,29 +295,41 @@ button:hover {
   font-weight: 800;
 
 }
-.Workbut1, .Workbut2, .Workbut3 {
+
+.Workbut1,
+.Workbut2,
+.Workbut3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width:280px;
+  width: 280px;
   height: 400px;
   font-size: 20px;
   margin-left: 70px;
   margin-right: 70px;
-   background-image: url(background.png);
+  background-image: url(background.png);
   background-size: cover;
   object-fit: contain;
-  
-}
-.Workbut1:hover, .Workbut2:hover, .Workbut3:hover {
-  background-size: cover;
-  object-fit: contain;
-  width:430px;
- font-weight: bolder;
- font-size: xx-large;
+  margin-top: 50px;
 
 }
-  .Workbut1:hover {
+
+.Workbut1:hover,
+.Workbut2:hover,
+.Workbut3:hover {
+  background-size: cover;
+  object-fit: contain;
+  width: 430px;
+  font-weight: bolder;
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+
+
+
+}
+
+.Workbut1:hover {
   background-image: url(typography.png);
 }
 
@@ -264,32 +337,39 @@ button:hover {
   background-image: url(carp.jpg);
 
 }
+
 .Workbut3:hover {
   background-image: url(HTML.png);
 
 }
-.but1 , .but2 , .but3 {
+
+.but1,
+.but2,
+.but3 {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 20px;
-height: 80px;
-  margin: 75px;
+  height: 80px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
   width: 300px;
 }
+
 .but1:hover {
   background-image: url(coding.jpg);
   background-size: cover;
   object-fit: contain;
- height: 250px;
- width: 450px;
+  height: 240px;
+  width: 450px;
 }
 
 .but2:hover {
   background-image: url(wireframe.avif);
   background-size: cover;
   object-fit: contain;
-  height: 250px;
+  height: 240px;
   width: 450px;
 }
 
@@ -298,8 +378,8 @@ height: 80px;
   background-image: url(aboutme.jpg);
   background-size: cover;
   object-fit: contain;
-  height: 250px;
- width: 450px;
+  height: 240px;
+  width: 450px;
 }
 
 button:active {
@@ -314,17 +394,17 @@ button:active {
   width: 100%;
   position: fixed;
   bottom: 0;
-  
+font-size: xx-small;
 }
+
 footer {
   background-color: black;
   height: 30px;
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: x-small;
+  font-size: xx-small;
   color: white;
-  margin: 0;
-  margin-top: 300px;
+
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -342,40 +422,46 @@ footer {
   border: 5px solid black;
   width: 500px;
   height: 600px;
-  margin-left: 50px;
+  margin-right: 100px;
   margin-bottom: 50px;
   text-align: center;
   overflow: hidden;
   background-color: rgb(226, 226, 226);
+
+  object-fit: fill;
 }
 
 .slides {
   display: flex;
-  
+
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 
 }
+
 .slides::-webkit-scrollbar {
   width: 10px;
   height: 10px;
 }
+
 .slides::-webkit-scrollbar-thumb {
   background: #636262;
   border-radius: 10px;
 }
+
 .slides::-webkit-scrollbar-track {
   background: transparent;
 }
-.slides > div {
+
+.slides>div {
 
   scroll-snap-align: start;
   flex-shrink: 0;
   width: 600px;
   height: 580px;
-  margin-right: 50px;
+
   border-radius: 0px;
   transform-origin: center center;
   transform: scale(1);
@@ -383,11 +469,20 @@ footer {
   position: relative;
 
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   font-size: 100px;
 }
 
-
-
-
+.slider>a {
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #DDAF94;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
