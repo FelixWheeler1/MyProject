@@ -184,8 +184,7 @@ header {
   background-image: url(background.png);
   background-size: cover;
   justify-content: center;
-  padding-left: 100px;
-
+ 
 }
 
 .section2 {
@@ -195,7 +194,7 @@ header {
   align-items: center;
   flex-wrap: wrap;
   padding-top: 34px;
-  padding-bottom: 100px;
+  padding-bottom: ;
 }
 
 p {
@@ -336,8 +335,8 @@ justify-content: center;
 }
 
 .posters {
-  width: calc(297px * 1.25);
-  height: calc(420px * 1.25);
+  width: calc(297px * 1.20);
+  height: calc(420px * 1.20);
 
 transition: transform .5s ease ;
 }
