@@ -67,6 +67,7 @@ flex: 0 0 auto;
 }
 
 
+
 /* navigation-menu */
 
 .menubar {
@@ -194,7 +195,7 @@ header {
   align-items: center;
   flex-wrap: wrap;
   padding-top: 34px;
-  padding-bottom: ;
+
 }
 
 p {
